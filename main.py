@@ -1,29 +1,49 @@
 __author__ = "Kartik Kannapur"
-__date__ = "24.06.2015"
+__date__ = "25.07.2015"
 
 #Import Files
 import TED_Private_API as TED_Private_API
 
 #Import Python Libraries
 import requests
+import json
 
 
-#Parameters
-api_key = TED_Private_API.Private_Key
-api_endpoint_url = "https://api.ted.com"
-api_endpoint_version = "/v1/"
+class TEDAPI(object):
+    """
+    This class contains multiple functions that return the list of countries,
+    ratings of each talk.
+    """
 
-json_paramater = "countries"
+    def __init__(self):
+        print "----- TED API -----"
+        self.api_key = TED_Private_API.Private_Key
+        self.api_endpoint_url = "https://api.ted.com"
+        self.api_endpoint_version = "/v1/"
 
-api_endpoint = api_endpoint_url + api_endpoint_version + json_paramater + ".json?api-key=" + api_key
+
+    def get_countries(self):
+        self.api_endpoint = self.api_endpoint_url + self.api_endpoint_version + "countries" + ".json?api-key=" + \
+                       self.api_key
+
+        self.response_countries = requests.get(self.api_endpoint)
+        self.countries_json = json.loads(self.response_countries.content)
+        print self.countries_json['states']
+        print "Total Number of Countries: " + str(self.countries_json['counts'])
 
 
-def main_function():
-    # print api_endpoint
-    response_countries = requests.get(api_endpoint)
-    print response_countries.content
-    
+    def get_talk_ratings(self):
+        """
+        This function returns the ratings for each talk with the following parameters -
+        ratingid, rating, talkid, ratingwordid and name
+        """
+        self.api_endpoint = self.api_endpoint_url + self.api_endpoint_version + "ratings" + ".json?api-key=" + \
+                       self.api_key
 
+        self.response_talk_ratings = requests.get(self.api_endpoint)
+        self.talk_ratings_json = json.loads(self.response_talk_ratings)
+        print self.talk_ratings_json
 
 if __name__ == "__main__":
-    main_function()
+    my_ted_api_instance = TEDAPI()
+    # my_ted_api_instance.get_countries()
