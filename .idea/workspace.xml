@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ff737aa-aa10-4967-bc24-ec7d3e485266" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="Exploring-the-TED-API.iws" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1409">
-              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1424">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -54,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/TED_Private_API.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.06392045" vertical-offset="0" max-vertical-offset="734">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="39" />
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -69,8 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TED_Private_API.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -416,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1409">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1424">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -425,7 +424,7 @@
     <entry file="file://$PROJECT_DIR$/TED_Private_API.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06392045" vertical-offset="0" max-vertical-offset="734">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="39" />
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding />
         </state>
       </provider>

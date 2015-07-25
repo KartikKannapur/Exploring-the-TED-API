@@ -47,3 +47,4 @@ class TEDAPI(object):
 if __name__ == "__main__":
     my_ted_api_instance = TEDAPI()
     # my_ted_api_instance.get_countries()
+    my_ted_api_instance.get_talk_ratings()
